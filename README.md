@@ -4,11 +4,19 @@
 
 
 {
+<<<<<<< HEAD
 "id": "5b4910ae0508220014ccfe91",
 "text": "Кошки могуть создавать более 100 разных звуков, тогда как собаки только около 10.",
 "type": "cat",
 "user": "Alex Petrov",
 "upvotes": null
+=======
+  "id": "5b4910ae0508220014ccfe91",
+  "text": "Кошки могуть создавать более 100 разных звуков, тогда как собаки только около 10.",
+  "type": "cat",
+  "user": "Alex Petrov",
+  "upvotes": null
+>>>>>>> origin/main
 },
 
 
@@ -27,21 +35,36 @@ upvotes - голоса
 
 
 <dependency>
+<<<<<<< HEAD
 <groupId>org.apache.httpcomponents</groupId>
 <artifactId>httpclient</artifactId>
 <version>4.5.12</version>
+=======
+   <groupId>org.apache.httpcomponents</groupId>
+   <artifactId>httpclient</artifactId>
+   <version>4.5.12</version>
+>>>>>>> origin/main
 </dependency>
 
 Создайте метод в который добавьте и настройте класс CloseableHttpClient например с помощью builder
 
 
 CloseableHttpClient httpClient = HttpClientBuilder.create()
+<<<<<<< HEAD
 .setDefaultRequestConfig(RequestConfig.custom()
 .setConnectTimeout(5000)    // максимальное время ожидание подключения к серверу
 .setSocketTimeout(30000)    // максимальное время ожидания получения данных
 .setRedirectsEnabled(false) // возможность следовать редиректу в ответе
 .build())
 .build();
+=======
+    .setDefaultRequestConfig(RequestConfig.custom()
+        .setConnectTimeout(5000)    // максимальное время ожидание подключения к серверу
+        .setSocketTimeout(30000)    // максимальное время ожидания получения данных
+        .setRedirectsEnabled(false) // возможность следовать редиректу в ответе
+        .build())
+    .build();
+>>>>>>> origin/main
 
 Добавьте объект запроса HttpGet request = new HttpGet("https://raw.githubusercontent.com/netology-code/jd-homeworks/master/http/task1/cats") и вызовите удаленный сервис CloseableHttpResponse response = httpClient.execute(request);
 
@@ -50,12 +73,21 @@ CloseableHttpClient httpClient = HttpClientBuilder.create()
 
 
 <dependency>
+<<<<<<< HEAD
 <groupId>com.fasterxml.jackson.core</groupId>
 <artifactId>jackson-databind</artifactId>
 <version>2.11.1</version>
+=======
+   <groupId>com.fasterxml.jackson.core</groupId>
+   <artifactId>jackson-databind</artifactId>
+   <version>2.11.1</version>
+>>>>>>> origin/main
 </dependency>
 
 Создайте класс, в который будем преобразовывать json ответ от сервера. Преобразуйте json в список java объектов. Отфильтруйте список - например, средствами stream api. Выведите результат на экран.
 
 Гит коммит и пуш в публичный репозиторий. Отправьте репо с решением на проверку.
+<<<<<<< HEAD
 УСПЕХОВ!!!
+=======
+>>>>>>> origin/main
